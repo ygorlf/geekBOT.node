@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Ygor Fonseca <ygor.luiz.fonseca@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "discord.js": "^12.0.2"
   }
