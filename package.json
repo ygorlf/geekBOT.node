@@ -1,0 +1,10 @@
+{
+  "name": "geekBOT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ygor Fonseca <ygor.luiz.fonseca@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.0.2"
+  }
+}
