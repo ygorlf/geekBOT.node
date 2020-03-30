@@ -121,7 +121,7 @@ client.on('ready', (ev) => {
 });
 
 client.on('message', async (msg) => {
-  const args = msg.content.slice(config.prefix.length).trim().split(/ +/g);
+  const args = msg.content.slice(1).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
   if (command === 'ola') {
