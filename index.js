@@ -1,7 +1,9 @@
 'use strict';
 
+const express = require('express');
 const Discord = require('discord.js');
 
+const app = express();
 const client = new Discord.Client();
 
 const activities_list = [
@@ -236,4 +238,9 @@ client.on('message', async (msg) => {
   }
 });
 
-client.login(`${process.env.GEEK_TOKEN}`);
+const server_port = process.env.YOUR_PORT || process.env.PORT || 80;
+const server_host = process.env.YOUR_HOST || '0.0.0.0';
+
+app.listen(server_port, server_host, function() {
+  client.login(`${process.env.GEEK_TOKEN}`);
+});
